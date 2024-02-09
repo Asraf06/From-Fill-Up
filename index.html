@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Asrafuls Data collect</title>
+	<link rel="stylesheet" href="Google Sheet.css">
+</head>
+<body>
+    <div>
+        <script>
+            function lines() {
+                let sizeW = Math.random() * 22;
+                let duration = Math.random() * 3;
+                let e = document.createElement("div");
+                e.setAttribute("class", "circle");
+                document.body.appendChild(e);
+                e.style.width = 12 + sizeW + "px";
+                e.style.left = Math.random() * +innerWidth + "px";
+                e.style.animationDuration = 2 + duration + "s";
+    
+                setTimeout(function () {
+                    document.body.removeChild(e);
+                }, 5000);
+            }
+            setInterval(function () {
+                lines();
+            }, 200);
+        </script>
+        </div>
+        <script src="Google Sheet.js"></script>
+	<div class="container">
+		<form method="post" action="" name="contact-form">
+			<h4>Submit Your Information</h4>
+			<p>(Made by Asraful)</p>
+			<input type="text" name="your-name" placeholder="Name">
+			<input type="text" name="your-number" placeholder="Phone Number">
+			<input type="email" name="your-email" placeholder="Email">
+			<textarea name="message" rows="7" placeholder="Your Message"></textarea>
+			<input type="submit" value="Submit" id="submit">
+		</form>
+        <div class="wrap">
+            <h1>About Us</h1>
+            <div class="task">
+                <div class="abstract">
+                    <h3>About The From</h3>
+                    <p>This from is about to fill your information. It helps us to get such information to know that your are a mamber of us. Touch here to get more details.</p>
+                </div>
+                <div class="details">
+                    <div class="details__inner">
+                        <h3>Details</h3>
+                        <p>The website was devolopmet by (Asraful).Youer from will deliver to Google Sheets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>
